@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+<title>Final</title>
+<link rel="stylesheet" href="css/styley.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(102, 102, 102);
+  background-image: url("image/picy.jpg");
+  padding: 70px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: rgb(204, 204, 204);
+  text-align: left;
+  background-image: url("image/back1.jpg");
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: rgb(82, 173, 195);
+  
+  height: 900px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(224, 226, 124);
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-image: url("image/back1.jpg");
+ 
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>Test Form Git : Pawaris</h1>
+    
+    
+<header>
+    <div class="menu">
+    <ul>
+        <li><a href="image/f1.jpg"target =IframeShowData>หน้าแรก</a></li>
+        <li><a href="schedule.html"target =IframeShowData>รอบการรับสมัครเรียน</a></li>
+        <li><a href="course.html"target =IframeShowData>แผนการเรียน</a></li>
+        <li><a href="register.html"target =IframeShowData>สมัครเข้าศึกษาต่อ</a></li>
+        <li><a href="contact.html"target =IframeShowData>ติดต่อภาควิชา</a></li>
+    </ul>
+    </div>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">ค้นหา</button>
+        </form>
+      </div>
+</li> 
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h1><li><a href="http://www.fitm.kmutnb.ac.th/department" target =IframeShowData>หน่วยงาน/ภาควิชา</a></li></h1>
+      <h1><li><a href="http://www.fitm.kmutnb.ac.th/about-us" target =IframeShowData >แนะนำคณะฯ</a></li></h1>
+      <h1><li><a href="http://www.fitm.kmutnb.ac.th/administrator"target =IframeShowData >บุคลากร</a></li></h1>
+      <h1><li><a href="http://www.fitm.kmutnb.ac.th/fitm_curriculum"target =IframeShowData >หลักสูตรการศึกษา</a></li></h1>
+      <h1><li><a href="https://www.facebook.com/FITM.KMUTNB"target =IframeShowData >FITM Page</a></li></h1>
+      <h1><li><a href="https://stdadmis2.kmutnb.ac.th"target =IframeShowData >รับสมัครนักศึกษาใหม่</a></li></h1>
+      <h1><li><a href="https://www.facebook.com/students.pc"target =IframeShowData >กิจการนักศึกษา</a></li></h1>
+      <h1><li><a href="https://pyramid.kmutnb.ac.th"target =IframeShowData >สำนักหอสมุดกลาง</a></li></h1>
+      <h1><li><a href="https://sites.google.com/a/fitm.kmutnb.ac.th/km"target =IframeShowData >การจัดการความรู้</a></li></h1>
+      <h1><li><a href="http://alumni.kmutnb.ac.th"target =IframeShowData >ศิษย์เก่าเทคโนฯ</a></li></h1>
+
+
+    </ul>
+</nav>
+
+<article>
+    <iframe src="image/f1.jpg" name= 'IframeShowData'style="border:none;"height="800"width="100%"title="IframeShowData"></iframe>
+   
+</article>
+</section>
+
+<footer>
+<h3>ติดตามเราได้ที่</h3>
+<footer>
+    <p><h1><a href="https://www.facebook.com/INEKMUTNB/">
+        Information and Network Engineering Kmutnb</a></h1></p>
+    <p><h1><a href="https://twitter.com/official_kmutnb">Twitter</a></h1></p>
+    <p><h1><a href="https://ita.kmutnb.ac.th/">ITA</a></h1></p>
+</footer>
+
+
 </body>
 </html>

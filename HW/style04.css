@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(50, 158, 246);
+    background-image: url("glz.jpg");
+  }
+  
+  p {
+    color: rgb(245, 240, 245);
+    margin-left: 20px;
+  }
+
+  table, td, th {
+    border: 1px solid rgb(231, 231, 231);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%; 
+  }
+  th {
+    height: 50px;   
+  }
+
